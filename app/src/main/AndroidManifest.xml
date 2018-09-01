@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.fib.biblioteca">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/book_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/book_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".UsuarioActivity"></activity>
+        <activity android:name=".UsuarioModalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UsuarioActivity" />
+        </activity>
+
+        <activity android:name=".LivroActivity"></activity>
+        <activity android:name=".LivroModalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LivroActivity" />
+        </activity>
+
+        <activity android:name=".AutorActivity"></activity>
+        <activity android:name=".AutorModalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AutorActivity" />
+        </activity>
+
+        <activity android:name=".EmprestimoAcitivity"></activity>
+        <activity android:name=".EmprestimoModalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EmprestimoAcitivity" />
+        </activity>
+    </application>
+
+</manifest>

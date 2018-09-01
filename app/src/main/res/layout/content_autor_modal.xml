@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AutorModalActivity"
+    tools:showIn="@layout/app_bar_autor_modal">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tblImagemAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgAutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="1dp"
+                android:layout_span="2"
+                android:scaleType="center"
+                android:src="@drawable/ic_usuario" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Autor"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtNomeAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <Button
+            android:id="@+id/btnSalvarAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Salvar" />
+
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

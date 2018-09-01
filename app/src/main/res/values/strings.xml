@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Biblioteca - FIB</string>
+    <string name="username">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="login">Entrar</string>
+    <string name="home">Home</string>
+    <string name="title_activity_main">Biblioteca</string>
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar menu</string>
+    <string name="nav_header_title">Biblioteca - FIB</string>
+    <string name="nav_header_subtitle">Usuário logado</string>
+    <string name="nav_header_desc">Cabeçalho</string>
+    <string name="action_settings">Configurações</string>
+    <string name="incluir">Incluir</string>
+    <string name="apagar">Apagar Selecionados</string>
+    <string name="selecionarAutor">Selecione um autor</string>
+</resources>

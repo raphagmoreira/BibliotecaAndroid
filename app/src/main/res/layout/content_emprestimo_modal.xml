@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EmprestimoModalActivity"
+    tools:showIn="@layout/app_bar_emprestimo_modal">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tblImagemEmprestimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgEmprestimo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="1dp"
+                android:layout_span="2"
+                android:scaleType="center"
+                android:src="@drawable/ic_livro" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:id="@+id/txtEmprestarPara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emprestar para"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/txtLivroEmprestado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emprestar livro"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_livro"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/txtDataEmprestimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Emprestimo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtDataEmprestimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtDataDevolucao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Devolução"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtDataDevolucao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/txtDataDevolvido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Devolvido"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtDataDevolvido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <Button
+            android:id="@+id/btnSalvarEmprestimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Salvar" />
+
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
